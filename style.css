@@ -1,0 +1,39 @@
+html {
+    font-family: 'Lato', sans-serif;
+    background: #FACFE3;
+}
+
+.cabecalho {
+    background-color: #4D0367;
+    border-bottom: 7px solid #A24FBF;
+}
+
+.caixaCabecalho {
+    position: relative;
+    width: 940px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+
+.logoAlura {
+    position: absolute;
+    width: 100px;
+    left: 0;
+}
+
+.nomeDoJogo {
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #C6ADFF;
+    border: 5px solid #F7F4FE;
+    border-radius: 30px;
+}
+
