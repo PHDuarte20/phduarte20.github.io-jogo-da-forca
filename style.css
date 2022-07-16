@@ -1,11 +1,16 @@
-html {
+* {
     font-family: 'Lato', sans-serif;
+}
+
+html {
     background: #FACFE3;
 }
 
 .cabecalho {
     background-color: #4D0367;
-    border-bottom: 7px solid #A24FBF;
+    border-bottom: 10px solid #A24FBF;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .caixaCabecalho {
@@ -14,10 +19,7 @@ html {
     height: 100px;
     margin: 0 auto;
     padding: 30px 0;
-    text-align: center;
 }
-
-
 
 .logoAlura {
     position: absolute;
@@ -25,15 +27,94 @@ html {
     left: 0;
 }
 
-.nomeDoJogo {
+#tituloDoJogo {
     position: absolute;
-    top: 40px;
-    left: 300px;
-    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 50px;
-    font-weight: bolder;
-    color: #C6ADFF;
-    border: 5px solid #F7F4FE;
-    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: overline underline;
+    color: #dad5f1;
 }
 
+.menuPrincipal {
+    height: 500px;
+    margin: 0 auto;
+}
+
+.caixaMenuPrincipal {
+    position: relative;
+    width: 540px;
+    height: 490px;
+    margin: 0 auto;
+}
+
+.btnIniciar, .btnAdicionarPalavra {
+    background-color: #fa0bee;
+    border: 3px solid #000000a1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.btnIniciar {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btnAdicionarPalavra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btnIniciar:hover {
+    background-color: #fcdaff;
+    color: #4D0367;
+}
+
+.btnAdicionarPalavra:hover {
+    background-color: #fcdaff;
+    color: #4D0367;
+}
+
+.rodape {
+    background-image: url("/Imagens/rpg-space.gif");
+    border-top: 10px solid #7D0047;
+}
+
+.redesSociais {
+    display: inline-block;
+    height: 150px;
+    color: white;
+
+}
+
+.logoGithub {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.logoInstagram {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.logoLinkedin {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.logoTwitter {
+    width: 50px;
+    border-radius: 50%;
+    
+}
