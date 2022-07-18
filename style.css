@@ -1,5 +1,6 @@
 * {
     font-family: 'Lato', sans-serif;
+    color: #dad5f1;
 }
 
 html {
@@ -51,7 +52,8 @@ html {
     margin: 0 auto;
 }
 
-.btnIniciar, .btnAdicionarPalavra {
+.caixaMenuPrincipal button {
+    transition-duration: 0.4s;
     background-color: #fa0bee;
     border: 3px solid #000000a1;
     color: white;
@@ -59,7 +61,11 @@ html {
     text-align: center;
     font-size: 16px;
     border-radius: 5px;
-    transition-duration: 0.4s;
+}
+
+.caixaMenuPrincipal button:hover {
+    background-color: #fcdaff;
+    color: #4D0367;
 }
 
 .btnIniciar {
@@ -76,45 +82,69 @@ html {
     transform: translate(-50%);
 }
 
-.btnIniciar:hover {
-    background-color: #fcdaff;
-    color: #4D0367;
-}
-
-.btnAdicionarPalavra:hover {
-    background-color: #fcdaff;
-    color: #4D0367;
-}
-
 .rodape {
+    position: relative;
+    background-color: #06031a;
     background-image: url("/Imagens/rpg-space.gif");
     border-top: 10px solid #7D0047;
-}
-
-.redesSociais {
-    display: inline-block;
     height: 150px;
-    color: white;
-
+    margin: 0 auto;
 }
 
-.logoGithub {
-    width: 50px;
-    border-radius: 50%;
+.caixaRedesSociais {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
 }
 
-.logoInstagram {
-    width: 50px;
-    border-radius: 50%;
+.redesSociais li {
+    display: inline;
 }
 
-.logoLinkedin {
-    width: 50px;
+.redesSociais img {
     border-radius: 50%;
+    margin: 10px 20px 0 20px;
 }
 
-.logoTwitter {
-    width: 50px;
-    border-radius: 50%;
-    
+.caixaCreditos {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 10px auto 10px;
+}
+
+.creditos-Icons-Usados li {
+    display: inline;
+    margin: 0 5px 0 5px;
+}
+
+.creditos-Icons-Usados a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 7px;
+    color: #7a7979;
+    font-size: 16px;
+    transition-duration: 0.4;
+}
+
+.creditos-Icons-Usados a:hover {
+    color: #fa0b53;
+    text-decoration: underline;
+}
+
+span {
+    font-size: 14px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 14px;
+    color: #dad5f1;
+    margin: 0 auto 2px;
 }
